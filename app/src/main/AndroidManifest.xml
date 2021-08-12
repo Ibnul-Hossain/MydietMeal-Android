@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mydietmeal.mydietmealupdated">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ConsultConsumer"></activity>
+        <activity android:name=".NutriProfile" />
+        <activity android:name=".NutritionistLogin" />
+        <activity android:name=".NutritionistDashboard" />
+        <activity android:name=".NutritionistSignUp" />
+        <activity android:name=".ApproveNutritionist" />
+        <activity android:name=".ApproveConsumer" />
+        <activity android:name=".TotalMealCalculation" />
+        <activity android:name=".AdminDashboard" />
+        <activity android:name=".PaymentStatus" />
+        <activity android:name=".FirstScreenNew" />
+        <activity android:name=".OTPVerification" />
+        <activity android:name=".CancelSubscription" />
+        <activity android:name=".Packages" />
+        <activity android:name=".Payment" />
+        <activity android:name=".ConsultWithNutritionist" />
+        <activity android:name=".MakeSubscription" />
+        <activity android:name=".DietChart" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Login" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
