@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CancelSubscription">
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Cancel Subscription"
+        android:textColor="#fff"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#40BDB2"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Phone Number"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/viewPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Null"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="#40BDB2"
+            android:text="Package Name"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/viewPackName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Null"
+            android:textSize="28sp" />
+
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#40BDB2"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Total Paid"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/viewTotalPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Null"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/cancelSubs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Cancel Subscription"
+            android:padding="15dp"
+            android:background="@drawable/round_button2"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

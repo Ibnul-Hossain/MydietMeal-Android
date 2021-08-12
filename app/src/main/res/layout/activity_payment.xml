@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8CAC7"
+    tools:context=".Payment">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BAB8AE"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Make Payment"
+        android:textColor="#FF5722"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="#B8CAC7"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextView
+            android:id="@+id/levelPrice"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:text="Meals cost per day"
+
+            android:textColor="#3C3A3A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textViewCostPerDay"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:background="#8CAF8E"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/levelPackageName"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:text="Package Name"
+            android:textColor="#3C3A3A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewPackageName"
+            android:layout_width="180dp"
+            android:layout_height="25dp"
+            android:background="#8CAF8E"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How Many days?"
+            android:layout_marginTop="15dp"
+            android:textColor="#3C3A3A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="296dp"
+            android:layout_height="35dp"
+            >
+
+            <RadioButton
+                android:id="@+id/oneWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#3C3A3A"
+                android:onClick="daySelection"
+                android:text="1 Week" />
+
+            <RadioButton
+                android:id="@+id/fifteenDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#3C3A3A"
+                android:onClick="daySelection"
+                android:text="15 Days" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/levelTotalPrice"
+            android:layout_width="113dp"
+            android:layout_height="28dp"
+            android:text="Total payable"
+            android:layout_marginTop="15dp"
+            android:textColor="#3C3A3A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTotalCost"
+            android:layout_width="294dp"
+            android:layout_height="32dp"
+            android:background="#8CAF8E"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="133dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="Bkash Payment"
+            android:layout_marginTop="15dp"
+            android:textColor="#3C3A3A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:gravity="center"
+            android:text="01515645114"
+            android:layout_marginStart="4dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColor="#1E1D1E"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Transaction ID"
+            android:textColor="#3C3A3A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/transactionID"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="192dp"
+            android:layout_height="69dp"
+            android:hint="Enter your transaction ID">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="365dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnConfirmSubscription"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button2"
+            android:onClick="confirmSubscription"
+
+            android:padding="3dp"
+            android:text="Confrim Subscription"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
